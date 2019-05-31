@@ -1,0 +1,16 @@
+<!DOCTYPE xml>
+<mvc:View controllerName="salesorders.controller.Items" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core">
+	<Page id="page" title="{i18n>appTitle}">
+		<content>
+			<List id="list" items="{items>/SalesOrderItemSet}">
+				<items>
+					<ObjectListItem title="{items>SalesOrder}" number="{items>TotalNetAmount}" numberUnit="{items>TransactionCurrency}" >
+						<attributes>
+							<ObjectAttribute text="{items>PurchaseOrderByCustomer} {items>IncotermsClassification} {items>IncotermsTransferLocation}"/>
+						</attributes>
+					</ObjectListItem>
+				</items>
+			</List>
+		</content>
+	</Page>
+</mvc:View>
