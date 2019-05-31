@@ -2,7 +2,7 @@ sap.ui.define([], function() {
 	"use strict";
 
 	return {
-		serviceUrl : "/services/v3/js/salesorders/api/SalesOrder.js",
+		serviceUrl : "/services/v3/js/sample-s4-hana-cloud/api/SalesOrder.js",
 		hcbTheme : "sap_hcb",
 		standardTheme : sap.ui.getCore().getConfiguration().getTheme(),
 
